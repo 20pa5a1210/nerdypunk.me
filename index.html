@@ -1,14 +1,23 @@
 <html>
-    <head>
-    </head>
-    <body>
-        
-    </body>
-    <script>
-        let ws;
-        const proto = window.location.protocol=== 'https' ? 'wss' : 'ws';
-        ws = new WebSocket(`${proto}://${window.location.host}`)
 
-        ws.onmessage = (event) => {console.log(event.data)}
-    </script>
+<head>
+    <style>
+        body {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<h1>hey half snack developers</h1>
+</body>
+<script>
+    let ws;
+    const proto = window.location.protocol === 'https' ? 'wss' : 'ws';
+    ws = new WebSocket(`${proto}://${window.location.host}`)
+
+    ws.onmessage = (event) => {console.log(event.data)}
+</script>
+
 </html>
